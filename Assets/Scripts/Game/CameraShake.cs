@@ -10,16 +10,29 @@ public class CameraShake : MonoBehaviour
 
     void Awake()
     {
-        Instance=this;
-        originalPos=transform.localPosition;
+        Instance = this;
+    }
+
+    void Start()
+    {
+        originalPos = transform.localPosition;
+    }
+
+    public void SetOriginalPos(Vector3 pos)
+    {
+        originalPos = pos;
     }
 
     public void Shake(float duration, float magnitude)
     {
-        if(shakeCoroutine!=null)
+        if (shakeCoroutine != null)
         {
             StopCoroutine(shakeCoroutine);
-            transform.localPosition=originalPos;
+            transform.localPosition = originalPos;
+        }
+        else
+        {
+            originalPos = transform.localPosition;
         }
         shakeCoroutine = StartCoroutine(ShakeCoroutine(duration, magnitude));
     }

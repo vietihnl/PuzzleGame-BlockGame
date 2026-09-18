@@ -43,10 +43,10 @@ public class PieceManager : MonoBehaviour
         BlockType randomType = GetRandomType();
         piece.SetType(randomType);
 
-        // Căn giữa hình dạng thật vào đúng tâm slot, bù trừ lệch pivot
-        Vector3 centerOffset = piece.GetShapeCenterOffset();
-        piece.transform.position = slotPositions[slotIndex] - centerOffset;
+        // Căn giữa hình dạng thật vào đúng tâm slot, bù trừ lệch pivot và tỉ lệ thu nhỏ
         piece.SetTrayScale();
+        Vector3 centerOffset = piece.GetShapeCenterOffset() * piece.TraySlotScale;
+        piece.transform.position = slotPositions[slotIndex] - centerOffset;
 
         currentPieces[slotIndex] = piece;
     }
@@ -89,9 +89,9 @@ public class PieceManager : MonoBehaviour
     {
         if (piece == null || slotIndex < 0 || slotIndex >= slotPositions.Length) return;
 
-        Vector3 centerOffset = piece.GetShapeCenterOffset();
-        piece.transform.position = slotPositions[slotIndex] - centerOffset;
         piece.SetTrayScale();
+        Vector3 centerOffset = piece.GetShapeCenterOffset() * piece.TraySlotScale;
+        piece.transform.position = slotPositions[slotIndex] - centerOffset;
     }
 
     public BlockPiece[] GetCurrentPieces()

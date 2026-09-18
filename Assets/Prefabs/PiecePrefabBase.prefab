@@ -83,4 +83,4 @@ MonoBehaviour:
   - type: 17
     prefab: {fileID: 7034698184499884352, guid: c3a5d5b7077f2864e8df9adccaa27a7d, type: 3}
   visualScale: 1.08
-  traySlotScale: 0.66
+  traySlotScale: 0.45

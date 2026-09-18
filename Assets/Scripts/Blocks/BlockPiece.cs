@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections.Generic;
 
 [System.Serializable]
@@ -20,9 +20,10 @@ public class BlockPiece : MonoBehaviour
     [SerializeField] private List<BlockPrefabMapping> prefabMappings;
 
     [SerializeField] [Range(0.5f, 2f)] private float visualScale = 0.9f;
-    [SerializeField] private float traySlotScale = 0.33f;
+    [SerializeField] private float traySlotScale = 0.45f;
     
     public BlockType Type => type;
+    public float TraySlotScale => traySlotScale;
     public bool IsPlaced { get; private set; } = false;
 
     void Start()
