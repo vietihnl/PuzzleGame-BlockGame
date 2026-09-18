@@ -766,7 +766,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.23529413, g: 0.3372549, b: 0.5882353, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -791,7 +791,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 11.578909
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2633,7 +2633,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1857045686}
   - component: {fileID: 1857045685}
-  - component: {fileID: 1857045687}
   m_Layer: 0
   m_Name: 'Background '
   m_TagString: Untagged
@@ -2641,19 +2640,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1857045687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857045684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c819d45e69b244749bb7e5c9f5376123, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BackgroundFit
-  targetCamera: {fileID: 519420031}
 --- !u!212 &1857045685
 SpriteRenderer:
   serializedVersion: 2
