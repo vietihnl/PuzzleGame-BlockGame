@@ -2633,6 +2633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1857045686}
   - component: {fileID: 1857045685}
+  - component: {fileID: 1857045687}
   m_Layer: 0
   m_Name: 'Background '
   m_TagString: Untagged
@@ -2640,6 +2641,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1857045687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857045684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c819d45e69b244749bb7e5c9f5376123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundFit
+  targetCamera: {fileID: 519420031}
 --- !u!212 &1857045685
 SpriteRenderer:
   serializedVersion: 2
