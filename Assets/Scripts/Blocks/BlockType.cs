@@ -1,0 +1,21 @@
+public enum BlockType
+{
+    I,
+    I1,  
+    O,
+    O1,
+    T,
+    L,  
+    J,
+    S,
+    Z,
+    O2,
+    L1,
+    L2,
+    I2,
+    L3,
+    L4,
+    O3,
+    L5,
+    L6,
+}
